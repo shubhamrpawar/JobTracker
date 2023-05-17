@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobTracker</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="JobTracker.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="heading"><span id="span1">J</span>ob<span id="span2">T</span>racker<span id="span3">>>></span></h1>
+        <div id="input-container">
+            <input type="date" size="10cm" id="date-input">
+            <input type="text" size="20cm" id="companyname-input" placeholder="Company name">
+            <input type="text" size="18cm" id="position-input" placeholder="Job position">
+            <input type="text" size="5cm" id="salary-input" placeholder="Salary">
+            <input type="text" size="5cm" id="location-input" placeholder="Location">
+            <input type="text" size="3cm" id="bond-input" placeholder="Bond">
+            <input type="text" size="10cm" id="application-input" placeholder="Application ID">
+
+            <button id="add-btn">Add</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Date</th>
+                    <th>Company name</th>
+                    <th>Job position</th>
+                    <th>Salary</th>
+                    <th>Location</th>
+                    <th>Bond</th>
+                    <th>Application ID</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+        <div id="update-container">
+            <input type="date" id="update-date-input">
+            <input type="text" id="update-companyname-input">
+            <input type="text" id="update-position-input">
+            <input type="text" id="update-salary-input">
+            <input type="text" id="update-location-input">
+            <input type="text" id="update-bond-input">
+            <input type="text" id="update-application-input">
+
+            <button id="update-btn">Update</button>
+            <button id="cancel-btn">Cancel</button>
+        </div>
+    </div>
+    <script src="JobTracker.js"></script>
+</body>
+
+</html>
